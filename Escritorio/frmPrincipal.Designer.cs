@@ -66,6 +66,7 @@
             this.opcionAlta.Name = "opcionAlta";
             this.opcionAlta.Size = new System.Drawing.Size(152, 22);
             this.opcionAlta.Text = "Alta";
+            this.opcionAlta.Click += new System.EventHandler(this.opcionAlta_Click);
             // 
             // frmPrincipal
             // 

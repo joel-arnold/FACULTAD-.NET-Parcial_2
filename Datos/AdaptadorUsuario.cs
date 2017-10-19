@@ -79,6 +79,7 @@ namespace Datos
         {
             try
             {
+                Usuario usuarito = new Usuario();
                 AbrirConexion();
                 SqlCommand cmdUsuarios = new SqlCommand("insert into usuarios" +
                     "(nombre, clave, email, tipo_usuario, ultimo_ingreso) " +
@@ -90,12 +91,13 @@ namespace Datos
                 cmdUsuarios.Parameters.Add("@email", SqlDbType.VarChar, 50).Value = usuario.Email;
                 cmdUsuarios.Parameters.Add("@tipo_usuario", SqlDbType.Int).Value = usuario.TipoUsuario;
                 cmdUsuarios.Parameters.Add("@ultimo_ingreso", SqlDbType.Date).Value = usuario.UltimoIngreso;
+                cmdUsuarios.ExecuteReader();
             }
-            catch (Exception ex)
-            {
-                Exception ExcepcionManejada = new Exception("No se pudieron traer los usuarios", ex);
-                throw ExcepcionManejada;
-            }
+            //catch (Exception ex)
+            //{
+            //    Exception ExcepcionManejada = new Exception("No se pudieron traer los usuarios", ex);
+            //    throw ExcepcionManejada;
+            //}
             finally
             {
                 CerrarConexion();

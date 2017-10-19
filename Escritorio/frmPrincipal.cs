@@ -22,5 +22,11 @@ namespace Escritorio
             Ingreso frmIngreso = new Ingreso();
             frmIngreso.ShowDialog();
         }
+
+        private void opcionAlta_Click(object sender, EventArgs e)
+        {
+            frmAlta alta = new frmAlta();
+            alta.ShowDialog();
+        }
     }
 }
