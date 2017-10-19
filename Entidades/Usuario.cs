@@ -12,6 +12,32 @@ namespace Entidades
         private string _Clave, _Email, _NombreUsuario;
         private int _TipoUsuario;
 
+        #region CONSTRUCTORES
+        public Usuario()
+        {
+            //Constructor sin parámetros
+        }
+
+        public Usuario(string nombreUsuario, string email, string clave, int tipoUsuario, DateTime ultimoIng)
+        {
+            this.NombreUsuario = nombreUsuario;
+            this.Clave = clave;
+            this.Email = email;
+            this.TipoUsuario = tipoUsuario;
+            this.UltimoIngreso = ultimoIng;
+        }
+        #endregion
+
+        #region PROPIEDADES
+        public int DiasUltimoIngreso
+        {
+            get
+            {
+                int difDias = DateTime.Today.Day - UltimoIngreso.Day;
+                return difDias;
+            }
+        }
+
         public DateTime UltimoIngreso
         {
             get
@@ -64,15 +90,6 @@ namespace Entidades
             }
         }
 
-        public int DiasUltimoIngreso
-        {
-            get
-            {
-                int difDias = UltimoIngreso.Day - DateTime.Today.Day;
-                return difDias;
-            }            
-        }
-
         public int TipoUsuario
         {
             get
@@ -84,6 +101,14 @@ namespace Entidades
             {
                 _TipoUsuario = value;
             }
+        } 
+        #endregion
+
+        public enum TiposUsuarios
+        {
+            SuperAdmin,
+            ConPocosPrivilegios,
+            Invitado
         }
     }
 }
