@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utiles", "Utiles\Utiles.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escritorio", "Escritorio\Escritorio.csproj", "{150C5C33-6464-46E2-9101-FF70EAC6D00A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{0AC6D5C3-6153-4B17-8EA1-B85F55627E66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{150C5C33-6464-46E2-9101-FF70EAC6D00A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{150C5C33-6464-46E2-9101-FF70EAC6D00A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{150C5C33-6464-46E2-9101-FF70EAC6D00A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC6D5C3-6153-4B17-8EA1-B85F55627E66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC6D5C3-6153-4B17-8EA1-B85F55627E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC6D5C3-6153-4B17-8EA1-B85F55627E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC6D5C3-6153-4B17-8EA1-B85F55627E66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

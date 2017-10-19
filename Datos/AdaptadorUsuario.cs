@@ -33,11 +33,11 @@ namespace Datos
                 drUsuarios.Close();
                 return usuarios;
             }
-            catch (Exception ex)
-            {
-                Exception ExcepcionManejada = new Exception("No se pudieron traer los usuarios", ex);
-                throw ExcepcionManejada;
-            }
+            //catch (Exception ex)
+            //{
+            //    Exception ExcepcionManejada = new Exception("No se pudieron traer los usuarios", ex);
+            //    throw ExcepcionManejada;
+            //}
             finally
             {
                 CerrarConexion();
